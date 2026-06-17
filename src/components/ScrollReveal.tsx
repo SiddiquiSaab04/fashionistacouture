@@ -75,11 +75,9 @@ export default function ScrollReveal({
       viewport={{ once: true, margin: "-120px" }}
       variants={getVariants()}
       transition={{
-        type: "spring",
-        stiffness: 85,
-        damping: 17,
-        mass: 1.05,
-        duration: duration / 1000,
+        type: "tween",
+        ease: [0.16, 1, 0.3, 1],
+        duration: (duration / 1000) * 1.2,
         delay: delay / 1000,
       }}
       className={className}
