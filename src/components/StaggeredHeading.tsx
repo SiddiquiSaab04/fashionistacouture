@@ -30,21 +30,19 @@ export default function StaggeredHeading({
   const letterVariants = {
     hidden: { 
       opacity: 0, 
-      y: 40, 
-      rotateX: -45,
-      scale: 0.9,
-      filter: "blur(4px)"
+      y: 15,
+      filter: "blur(8px)",
+      scale: 0.95
     },
     visible: { 
       opacity: 1, 
       y: 0, 
-      rotateX: 0,
-      scale: 1,
       filter: "blur(0px)",
+      scale: 1,
       transition: {
         type: "tween",
         ease: [0.16, 1, 0.3, 1],
-        duration: 1.0,
+        duration: 1.2,
       }
     },
   };
